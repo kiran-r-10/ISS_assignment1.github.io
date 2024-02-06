@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-repeat: no-repeat; 
+    background-image: url(bg2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    position: fixed;
+    height: 50px;
+
+}
+
+.navbar a {
+    float:left;
+    color:rgb(235, 198, 33);
+    padding: 14px 50px;
+    font-size: large;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    transition-duration: 0.1s;
+    opacity: 1;
+    color: rgb(235, 198, 33);
+    border-bottom: 1px rgb(235, 198, 33) solid;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.side {
+    background-color: transparent;
+    padding: 20px;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    margin-top: 2.45%;
+}
+
+.main {
+    margin-top: 1.6%;
+    flex: 70%;
+    width: 70%;
+    background-color: transparent;
+    padding: 20px;
+}
+
+img {
+    width: 400px;
+    height: 400px; 
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.box {
+    margin-left: 22.5%;
+    height: 80%;
+    background-color: transparent;
+    width: 78.5%;
+}
+
+.sideOpaque {
+    padding: 0px;
+    width: 22.5%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 2.63%;
+}
+
+.boxinsidebox {
+    margin-left: 10%;
+    height: 60%;
+    margin-top: 10%;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(0,0,0,0.2);
+    width: 80%;
+}
+
+
+
+
+
+
+

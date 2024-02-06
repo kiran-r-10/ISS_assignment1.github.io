@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog</title>
+    <script src="https://kit.fontawesome.com/4b0f04776b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 style="color: #3498db;">World of the lenses!</h1>
+    </header>
+
+    <article id="bp1">
+        <h2 style="color: #3498db; text-align: center;">Decoding the Magic: How Your Camera Transforms Moments into Masterpieces</h2>
+        <p>Imagine your camera as a wizard, armed with a wand (or lens, in this case) ready to capture the enchanting moments of everyday life and turn them into visual spells. In the mystical world of photography, this wizardry happens thanks to some fascinating tricks<br><br>Let's unveil the magic behind how your camera conjures up those mesmerizing images.<br><br>
+
+            📸 The Shutter Spell: Ever wondered how a camera freezes time with a click? It's all about the shutter spell! Picture this: your camera's shutter is like the blink of an eye, opening and closing in a fraction of a second. Fast shutter speeds freeze action – perfect for catching a high-five mid-air or a bubble popping. Slow shutter speeds, on the other hand, create dreamy effects, turning rushing waterfalls into silky streams.<br><br>
+            
+            🌟 The Aperture Charm: Enter the aperture charm, a magical mechanism that controls how much light your camera lets in. It's like adjusting the curtains in a theater – open wide for a bright scene or close them a bit for a more intimate, dimly lit setting. The aperture charm also adds a touch of wizardry by determining how much of your photo is in sharp focus, creating that dreamy background blur known as bokeh.<br><br>🎨 Editing Enchantment: But the magic doesn't end with the click! Once you've captured a moment, the editing enchantment begins. Your camera becomes a digital paintbrush, allowing you to tweak colors, add filters, and enhance the magic. With a bit of editing alchemy, you can transform a good photo into a visual masterpiece that tells a captivating story.
+
+            In the whimsical world of photography, your camera is more than just a device – it's a tool that captures the essence of magic in everyday moments. So, grab your camera, channel your inner wizard, and let the enchantment unfold one click at a time! 🌟📷✨</p>
+        
+        <div class="like-container" onclick="handleLike('likeButton1')">
+            <div id="likeIcon1" class="like-icon"></div>
+            <p id="likeText1" style="margin-top: 0.01%;">Like</p>
+        </div>
+
+        <p style="color: grey; float: left; margin-top: 1px;">Comments</p>
+        <p style="float: left; margin-top: 20px; margin-left: -4%;"><b>user_123 </b> That's so cool!</p>
+    </article>
+
+    <article id="bp2">
+        <h2 style="text-align: center; margin-top: 5%; color: #3498db;">The Physics of Photography: Unveiling the Science Behind Stunning Shots</h2>
+        <p style="float: left; margin-top: 1%;">Welcome to a world where photons dance, lenses bend light, and shutters freeze time the mesmerizing realm where photography and physics collide. In this captivating exploration, we'll embark on a journey through the lens, unraveling the scientific wonders that transform simple physics principles into visually stunning photographs.<br><br>
+
+            🔍 The Lens Equation Unveiled: At the heart of every camera lies a lens, a marvel of optics that bends and refracts light to create sharp, focused images. Let's dive into the lens equation, understanding how its intricate dance with incoming light rays results in the captivating convergence of beams onto the camera's sensor. Discover the secrets of focal lengths, apertures, and the physics that govern the clarity of your photographic vision.<br><br>
+            
+            ⚙️ Shutter Speed Dynamics: Ever wondered how your camera freezes action or captures the gentle flow of a waterfall? Enter shutter speed, the maestro of temporal manipulation. Unravel the physics behind this fundamental setting, exploring the relationship between exposure time and motion blur. From high-speed freezes to the dreamy trails of extended exposures, witness how the physics of shutter speed dictates the temporal narrative in your photographs.<br><br>
+            
+            🌈 Color Magic – The Physics of Light: Delve into the enchanting world of colors, where the physics of light takes center stage. Understand the spectral dance of photons and wavelengths that give rise to the vibrant hues in your images. From the prism-like dispersion of natural light to the intricate interplay of RGB pixels in digital sensors, discover how physics paints the visual spectrum, allowing you to capture the world in a myriad of colors.<br><br>
+            
+            📸 Sensor Sensitivity – The Quantum Leap: Step into the quantum realm where the camera's image sensor transforms photons into pixels. Uncover the physics of photoelectric effect and quantum efficiency, unraveling the mystery behind sensor sensitivity and dynamic range. Witness how the delicate dance of electrons translates into the rich tonalities that define high-quality photographs.<br><br>
+            
+            🔭 Depth of Field – The Optics Odyssey: Explore the physics of focus in the captivating journey through depth of field. Grasp the principles of lens aperture and its impact on the range of distances that appear sharp in an image. From the physics of circles of confusion to the magic of bokeh, understand how optics orchestrates the visual storytelling in your photographs.<br><br>
+            
+            🌌 Astrophotography – A Cosmic Physics Ballet: Extend your gaze beyond Earth as we venture into astrophotography, where the laws of physics unlock the secrets of the night sky. From the Doppler effect to the inverse square law of light, unravel the cosmic ballet that allows photographers to capture the distant stars, galaxies, and the ethereal glow of celestial phenomena.<br><br>
+            
+            🖥️ Digital Alchemy – The Physics of Image Processing: Enter the digital darkroom, where the physics of signal processing and image algorithms shape the final photographic masterpiece. From noise reduction to color correction, witness how the principles of physics guide the post-processing journey, transforming raw data into visually stunning photographs.<br><br>
+            
+            In this fusion of art and science, photography emerges as a visual symphony conducted by the laws of physics. So, join us on this intriguing expedition, where each click of the shutter unveils the intricate dance between photons, optics, and the captivating principles that make every photograph a masterpiece of physics in action.<br></p>
+        
+        <div class="like-container" onclick="handleLike('likeButton2')" style="float:right; margin-right: 97%;">
+            <div id="likeIcon2" class="like-icon" ></div>
+            <p id="likeText2" style="margin-top: 0.01%;">Like</p>
+        </div>
+        
+        <p style="float: left; margin-top: 1px; color: gray;">Comments</p>
+        <p style="float: left; margin-left: -4%; margin-top: 20px;"><b>guess_who </b> Mindbending!!</p>
+    </article>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            let isLiked1 = localStorage.getItem("isLiked1") === "true";
+            let isLiked2 = localStorage.getItem("isLiked2") === "true";
+
+            
+            updateLikeIcon(1);
+            updateLikeIcon(2);
+
+            
+            window.handleLike = function (buttonId) {
+                
+                if (buttonId === 'likeButton1') {
+                    isLiked1 = !isLiked1;
+                    updateLikeIcon(1);
+                    localStorage.setItem("isLiked1", isLiked1);
+                } 
+                
+                else if (buttonId === 'likeButton2') {
+                    isLiked2 = !isLiked2;
+                    updateLikeIcon(2);
+                    localStorage.setItem("isLiked2", isLiked2);
+                }
+            };
+
+            
+            function updateLikeIcon(buttonNumber) {
+                const likeIcon = document.getElementById(`likeIcon${buttonNumber}`);
+                const likeText = document.getElementById(`likeText${buttonNumber}`);
+                const isLiked = (buttonNumber === 1) ? isLiked1 : isLiked2;
+
+                if (isLiked) {
+                    likeIcon.classList.add("filled");
+                    likeText.innerText = "Liked!";
+                } 
+                
+                else {
+                    likeIcon.classList.remove("filled");
+                    likeText.innerText = "Like";
+
+                }
+            }
+        });
+
+        </script>
+</body>
+</html>
